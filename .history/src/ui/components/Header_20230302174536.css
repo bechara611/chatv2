@@ -1,0 +1,40 @@
+.contenedor-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.titulo-header{
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+
+}
+.item-menu{
+   margin: 5px;
+   text-decoration: none;
+   color: white;
+  transition: all 1s ease;
+   padding: 7px;
+   border-radius: 20px;
+}
+.item-menu:hover{
+    text-decoration: none;
+    background: rgb(40, 139, 196);
+    color: white;
+}
+
+@media(max-width:577px){
+    .item-menu{
+        justify-content: center;
+    }
+}

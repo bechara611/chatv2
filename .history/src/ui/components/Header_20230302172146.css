@@ -1,0 +1,15 @@
+.contenedor-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.titulo-header{
+    text-align: center;
+    padding: 5px;
+}
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}

@@ -1,0 +1,14 @@
+.contenedor-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.titulo-header{
+    text-align: center;
+}
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}

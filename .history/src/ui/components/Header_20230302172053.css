@@ -1,0 +1,11 @@
+.contenedor-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}

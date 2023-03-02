@@ -1,0 +1,28 @@
+.contenedor-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.titulo-header{
+    text-align: center;
+    padding: 5px;
+}
+.contenedor-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+
+}
+.item-menu{
+   margin: 5px;
+   text-decoration: none;
+   color: white;
+   background: green;
+   padding: 7px;
+   border-radius: 20px;
+}
+.item-menu:hover{
+    text-decoration: none;
+    color: white;
+}
