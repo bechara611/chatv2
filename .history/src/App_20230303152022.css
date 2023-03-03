@@ -1,0 +1,8 @@
+.contenedor-completo{
+    min-height: 100vh;
+   position: relative;
+}
+.contenedor-header{
+    min-height: 20vh;
+    position: relative;
+}

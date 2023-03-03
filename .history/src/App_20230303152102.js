@@ -1,0 +1,19 @@
+import React from 'react'
+import { Rutas } from './Router/Routes';
+import { Header } from './ui/components/Header';
+import './App.css'
+import { Footer } from './ui/components/Footer';
+const App = () => {
+  return (
+    <>
+      <div className="contenedor-completo">
+        <Header></Header>
+        <Rutas></Rutas>
+       <div className="col12 separar">a</div>
+       <Footer></Footer>
+
+      </div>
+    </>
+  )
+}
+export default App;

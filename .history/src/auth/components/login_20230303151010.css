@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contenedor-loginRegistro{
+
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+  .formularioLoginRegister{
+
+    background-color: rgb(29, 29, 29,.6);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 10px rgba(142, 201, 228, 1);
+    padding: 10px;
+}
+.formularioLoginRegister *{
+  
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.formularioLoginRegister h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.labelLoginRegister{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.inputLoginRegister{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.btnLoginRegister{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnLoginRegister:hover{
+  background: #94b1dd;;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(55, 135, 184, 0.67);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
