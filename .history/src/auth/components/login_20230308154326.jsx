@@ -1,17 +1,13 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
-import { mostrar } from '../slices/authSlice';
 import './login.css'
 export const Login = () => {
     const navegar = useNavigate();
-    const authState = useSelector((state)=>state.auth);
-    const dispatch = useDispatch();
-
+    const authState = useSelector((state)=>state.auth)
     const onLogin=(e)=>{
         e.preventDefault();
         console.log(authState)
-        dispatch(mostrar());
 
     }
     return (

@@ -11,7 +11,7 @@ export const Login = () => {
     const onLogin=(e)=>{
         e.preventDefault();
         console.log(authState)
-        dispatch(mostrar());
+        dispatch(mostrar);
 
     }
     return (
