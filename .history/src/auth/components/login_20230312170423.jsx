@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
-import { useAuth } from '../hooks/useAuth';
-import { login, mostrar } from '../slices/authSlice';
+import { mostrar } from '../slices/authSlice';
 import './login.css'
 export const Login = () => {
     const navegar = useNavigate();
     const authState = useSelector((state)=>state.auth);
     const dispatch = useDispatch();
-const {onLoginUSE} = useAuth()
+
     useEffect(() => {
       if(localStorage.getItem('name') && localStorage.getItem('email') && localStorage.getItem('token')){
         navegar('/home')
@@ -20,23 +19,13 @@ const {onLoginUSE} = useAuth()
     }, [])
     
 
-    const onLogin=async(e)=>{
+    const onLogin=(e)=>{
         e.preventDefault();
-        //TODO LOGIN 
-        const resultado = await onLoginUSE({email:'dany',password:'123'})
-        console.log({resultado})
         localStorage.setItem('name','Dany Bechara')
         localStorage.setItem('email','bechara611@gmail.com')
         localStorage.setItem('token','abc123')
-        //TODO hacer el login y obtener los valores
-
         console.log(authState)
-        dispatch(login({
-            name:localStorage.getItem('name'),
-            email:localStorage.getItem('email'),
-            token:localStorage.getItem('token')
-        }));
-        navegar('/home')
+        dispatch(mostrar());
 
     }
     return (

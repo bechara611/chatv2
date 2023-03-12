@@ -20,11 +20,9 @@ const {onLoginUSE} = useAuth()
     }, [])
     
 
-    const onLogin=async(e)=>{
+    const onLogin=(e)=>{
         e.preventDefault();
-        //TODO LOGIN 
-        const resultado = await onLoginUSE({email:'dany',password:'123'})
-        console.log({resultado})
+        onLoginUSE({email:'dany',password:'123'})
         localStorage.setItem('name','Dany Bechara')
         localStorage.setItem('email','bechara611@gmail.com')
         localStorage.setItem('token','abc123')

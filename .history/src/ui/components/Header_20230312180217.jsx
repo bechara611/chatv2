@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { logout } from '../../auth/slices/authSlice';
 import './Header.css'
 export const Header = () => {
-  const navegar= useNavigate()
   const authState = useSelector((state)=>state.auth);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -35,12 +34,10 @@ export const Header = () => {
           
             <NavLink className={ ({isActive}) => `item-menu  ${ isActive ? 'activeLink':'' }` } to={'/register'} >Register</NavLink>
             {authState.token && authState.name && authState.email ? 
-              <NavLink className={ ({isActive}) => `item-menu  }` } to={'/login'} onClick={()=>{
+              <NavLink className={ ({isActive}) => `item-menu  }` } onClick={()=>{
                 localStorage.removeItem('email')
                 localStorage.removeItem('token')
                 localStorage.removeItem('name')
-             
-                navegar('/login')
                 dispatch(logout())
               }} >Logout</NavLink>
               :

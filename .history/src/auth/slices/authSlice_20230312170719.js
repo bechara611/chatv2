@@ -9,10 +9,8 @@ export const AuthSlice = createSlice({
         token: localStorage.getItem('token') || null
     },
     reducers: {
-        login: (state, { payload }) => {
-            state.name=payload.name;
-            state.email=payload.email;
-            state.token=payload.token
+        mostrar: (state, { payload }) => {
+            state.name='Dany bechara2'
           
         },
         logout:(state,{payload})=>{
@@ -23,4 +21,4 @@ export const AuthSlice = createSlice({
     }
 })
 
-export const {mostrar,logout,login} = AuthSlice.actions;
+export const {mostrar,logout} = AuthSlice.actions;

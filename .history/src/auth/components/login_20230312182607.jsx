@@ -22,7 +22,6 @@ const {onLoginUSE} = useAuth()
 
     const onLogin=async(e)=>{
         e.preventDefault();
-        //TODO LOGIN 
         const resultado = await onLoginUSE({email:'dany',password:'123'})
         console.log({resultado})
         localStorage.setItem('name','Dany Bechara')

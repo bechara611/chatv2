@@ -35,7 +35,7 @@ export const Header = () => {
           
             <NavLink className={ ({isActive}) => `item-menu  ${ isActive ? 'activeLink':'' }` } to={'/register'} >Register</NavLink>
             {authState.token && authState.name && authState.email ? 
-              <NavLink className={ ({isActive}) => `item-menu  }` } to={'/login'} onClick={()=>{
+              <NavLink className={ ({isActive}) => `item-menu  }` } onClick={()=>{
                 localStorage.removeItem('email')
                 localStorage.removeItem('token')
                 localStorage.removeItem('name')
