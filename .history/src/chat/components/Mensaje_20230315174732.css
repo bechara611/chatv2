@@ -1,0 +1,29 @@
+.contenedorMensajeInidividual {
+    display: flex;
+    overflow-y: hidden;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    margin: 10px;
+}
+
+.mensaje {
+   
+    text-align: justify;
+    padding: 20px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+    align-self: flex-end;
+    align-items: flex-end;
+ 
+
+}
+@media(max-width:300px){
+    .mensaje{
+        text-align: center;
+    }
+}

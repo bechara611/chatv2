@@ -1,0 +1,23 @@
+.chat {
+    background: red;
+    width: 100vw;
+    height: 300px;
+    overflow: scroll;
+    margin-top: 1000px;
+}
+
+.chat2 {
+   
+    width: 100vw;
+    height: 500px;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.hijoChat {
+    background: blue;
+    height: 300px;
+}

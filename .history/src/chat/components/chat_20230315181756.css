@@ -1,0 +1,43 @@
+.chat {
+    background: red;
+    width: 100vw;
+    height: 300px;
+    overflow: scroll;
+    margin-top: 1000px;
+ 
+}
+
+.chat2 {
+   
+    width: 100vw;
+    height: 600px;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.hijoChat {
+border: 10px solid rgb(173, 171, 171,.2);
+border-radius: 10px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.parteMensajes{
+overflow-y: hidden;
+height:80%;
+overflow: auto;
+overflow-x: hidden;
+
+scrollbar-width: none;
+}
+*{scrollbar-width: none;}
+.parteInputs{
+    height: 20%;
+border: 10px solid orange;
+}

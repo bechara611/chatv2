@@ -1,0 +1,12 @@
+.contenedorMensajeInidividual{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+.mensaje{
+    background: blue;
+    padding: 10px;
+    border-bottom-left-radius: 100px;
+}

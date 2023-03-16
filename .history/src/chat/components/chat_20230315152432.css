@@ -1,0 +1,14 @@
+.chat{
+    background: red;
+   width: 100vw;
+   height: 300px;
+   overflow: scroll;
+}
+.chat2{
+    background: red;
+   width: 100vw;
+   height: 300px;
+   overflow: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
